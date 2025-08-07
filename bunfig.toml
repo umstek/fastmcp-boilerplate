@@ -1,0 +1,11 @@
+[test]
+preload = ["./setup.ts"]
+
+[install]
+registry = "https://registry.npmjs.org/"
+frozen-lockfile = true
+
+[build]
+entrypoints = ["./src/server.ts"]
+outdir = "./dist"
+target = "node"

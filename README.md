@@ -11,8 +11,8 @@ To get started, clone the repository and install the dependencies.
 ```bash
 git clone https://github.com/punkpeye/fastmcp-boilerplate.git
 cd fastmcp-boilerplate
-npm install
-npm run dev
+bun i
+bun dev
 ```
 
 > [!NOTE]
@@ -23,13 +23,13 @@ npm run dev
 If you simply want to start the server, you can use the `start` script.
 
 ```bash
-npm run start
+bun start
 ```
 
 However, you can also interact with the server using the `dev` script.
 
 ```bash
-npm run dev
+bun dev
 ```
 
 This will start the server and allow you to interact with it using CLI.
@@ -39,27 +39,45 @@ This will start the server and allow you to interact with it using CLI.
 A good MCP server should have tests. However, you don't need to test the MCP server itself, but rather the tools you implement.
 
 ```bash
-npm run test
+bun test
 ```
 
 In the case of this boilerplate, we only test the implementation of the `add` tool.
 
-### Linting
+### Linting and Formatting
 
-Having a good linting setup reduces the friction for other developers to contribute to your project.
-
-```bash
-npm run lint
-```
+Having a good linting and formatting setup reduces the friction for other developers to contribute to your project.
 
 This boilerplate uses [Biome](https://biomejs.dev/) for linting and formatting the code.
 
-### Formatting
+```bash
+bun check
+```
 
-Use `npm run format` to format the code.
+### Building
+
+You can build your project for production using the `build` script.
 
 ```bash
-npm run format
+bun build
+```
+
+### Bun Configuration
+
+This project uses Bun as the JavaScript runtime. The configuration is in the `bunfig.toml` file:
+
+```toml
+[test]
+preload = ["./setup.ts"]
+
+[install]
+registry = "https://registry.npmjs.org/"
+frozen-lockfile = true
+
+[build]
+entrypoints = ["./src/server.ts"]
+outdir = "./dist"
+target = "node"
 ```
 
 ### GitHub Actions
