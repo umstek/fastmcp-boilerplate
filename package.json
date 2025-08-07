@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
+    "@total-typescript/tsconfig": "^1.0.4",
     "@tsconfig/node22": "^22.0.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-perfectionist": "^4.15.0",
