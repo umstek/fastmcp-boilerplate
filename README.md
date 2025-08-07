@@ -52,7 +52,7 @@ Having a good linting setup reduces the friction for other developers to contrib
 npm run lint
 ```
 
-This boilerplate uses [Prettier](https://prettier.io/), [ESLint](https://eslint.org/) and [TypeScript ESLint](https://typescript-eslint.io/) to lint the code.
+This boilerplate uses [Biome](https://biomejs.dev/) for linting and formatting the code.
 
 ### Formatting
 
