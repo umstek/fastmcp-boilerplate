@@ -1,6 +1,12 @@
 The MIT License (MIT)
 =====================
 
+Copyright © 2025 Wickramaranga Abeygunawardhana (umstek@live.com)
+
+This project is a fork of fastmcp-boilerplate, originally created by Frank Fiegel (frank@glama.ai). The original license is included below.
+
+---
+
 Copyright © 2025 Frank Fiegel (frank@glama.ai)
 
 Permission is hereby granted, free of charge, to any person
@@ -23,3 +29,4 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
