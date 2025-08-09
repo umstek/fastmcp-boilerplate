@@ -1,15 +1,18 @@
 # FastMCP Boilerplate
 
-A boilerplate for [FastMCP](https://github.com/punkpeye/fastmcp).
+A boilerplate for [FastMCP](https://github.com/umstek/fastmcp-boilerplate).
 
 This boilerplate is a good starting point for building an MCP server. It includes a basic setup for testing, linting, formatting, and publishing to NPM.
+
+> [!NOTE]
+> This is a fork of [fastmcp-boilerplate](https://github.com/punkpeye/fastmcp-boilerplate) by [punkpeye](https://github.com/punkpeye), migrated to use bun, biome, etc. to eliminate most dependencies, cleaned it up a bit, improved to use a separate MCP client in a file and used SSE instead of stdio for communication.
 
 ## Development
 
 To get started, clone the repository and install the dependencies.
 
 ```bash
-git clone https://github.com/punkpeye/fastmcp-boilerplate.git
+git clone https://github.com/umstek/fastmcp-boilerplate.git
 cd fastmcp-boilerplate
 bun i
 bun dev
@@ -92,6 +95,6 @@ This repository has a GitHub Actions workflow that runs linting, formatting, tes
 In order to use this workflow, you need to:
 
 1. Add `NPM_TOKEN` to the repository secrets
-   1. [Create a new automation token](https://www.npmjs.com/settings/punkpeye/tokens/new)
+   1. [Create a new automation token](https://www.npmjs.com/settings/umstek/tokens/new)
    2. Add token as `NPM_TOKEN` environment secret (Settings → Secrets and Variables → Actions → "Manage environment secrets" → "release" → Add environment secret)
 1. Grant write access to the workflow (Settings → Actions → General → Workflow permissions → "Read and write permissions")

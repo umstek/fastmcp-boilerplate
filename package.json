@@ -1,5 +1,5 @@
 {
-  "name": "fastmcp-boilerplate",
+  "name": "@umstek/fastmcp-boilerplate",
   "version": "0.1.0",
   "main": "dist/index.js",
   "scripts": {
@@ -16,10 +16,10 @@
     "boilerplate"
   ],
   "repository": {
-    "url": "https://github.com/punkpeye/fastmcp-boilerplate"
+    "url": "https://github.com/umstek/fastmcp-boilerplate.git"
   },
-  "author": "Frank Fiegel <frank@glama.ai>",
-  "homepage": "https://glama.ai/mcp",
+  "author": "Wickramaranga Abeygunawardhana <umstek@live.com>",
+  "homepage": "https://github.com/umstek/fastmcp-boilerplate",
   "type": "module",
   "license": "MIT",
   "description": "A boilerplate for FastMCP",
@@ -47,5 +47,5 @@
     "semantic-release": "^24.2.7",
     "typescript": "^5.9.2"
   },
-  "private": true
+  "private": false
 }
