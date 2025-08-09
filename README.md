@@ -44,6 +44,11 @@ bun test
 
 In the case of this boilerplate, we only test the implementation of the `add` tool.
 
+This boilerplate also includes an example of a resource and a prompt.
+
+- **Resource**: An application log file at `file:///logs/app.log`.
+- **Prompt**: A `git-commit` prompt that generates a commit message based on a provided diff.
+
 ### Linting and Formatting
 
 Having a good linting and formatting setup reduces the friction for other developers to contribute to your project.
