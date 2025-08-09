@@ -7,6 +7,11 @@ import { addTool } from "./add.js";
 const server = new FastMCP({
   name: name,
   version: version as `${number}.${number}.${number}`,
+  ping: {
+    enabled: true,
+    intervalMs: 10000,
+    logLevel: "debug",
+  },
 });
 
 server.addTool(addTool);
@@ -38,5 +43,9 @@ server.addPrompt({
 });
 
 server.start({
-  transportType: "stdio",
+  transportType: "httpStream",
+  httpStream: {
+    stateless: false,
+    port: 8080,
+  },
 });

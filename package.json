@@ -5,7 +5,8 @@
   "scripts": {
     "build": "bun build ./src/server.ts --outdir ./dist --target node",
     "start": "bun run dist/server.js",
-    "dev": "bun x --bun @wong2/mcp-cli bun src/server.ts",
+    "dev:server": "bun --watch src/server.ts",
+    "dev:client": "bun --watch src/client.ts",
     "check": "biome check . --write",
     "check:unsafe": "biome check . --write --unsafe"
   },
@@ -24,7 +25,8 @@
   "description": "A boilerplate for FastMCP",
   "dependencies": {
     "fastmcp": "^3.14.0",
-    "zod": "^4.0.15"
+    "zod": "^4.0.15",
+    "@modelcontextprotocol/sdk": "^1.17.1"
   },
   "release": {
     "branches": [
